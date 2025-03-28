@@ -54,7 +54,29 @@ h2 {
     margin-bottom: 20px;
 }
 
+#sobre {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
+.sobre-container {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.sobre-container p {
+    margin-bottom: 15px;
+}
+
+.sobre-container strong {
+    color: #0073e6;
+}
 
 .projetos-container {
     display: flex;
@@ -151,4 +173,21 @@ footer {
     background: #0073e6;
     color: white;
     margin-top: 20px;
+}
+
+footer a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    gap: 5px;
+}
+
+footer a:hover {
+    color: #FFF;
+}
+
+#FontAwesome {
+    padding: 3px;
 }

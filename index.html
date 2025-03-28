@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  <!--Adicionar Font Awesome-->
 </head>
 
 <body>
@@ -14,7 +15,7 @@
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#projetos">Projetos</a></li>
                 <li><a href="#experiencia">Experiência</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
@@ -25,8 +26,8 @@
         <div class="sobre-container">
             <p>
                 Sou um profissional com experiência em <strong>desenvolvimento web</strong>, atuando com 
-                <strong>HTML, CSS, PHP, JavaScript e Angular</strong>. Tenho conhecimento sólido em 
-                <strong>bancos de dados MySQL e Oracle</strong>, além de experiência com o <strong>ERP EBS da Oracle</strong>.
+                <strong>HTML, CSS, PHP, JavaScript, Angular e Bootstrap</strong>. Tenho conhecimento sólido em 
+                <strong>bancos de dados MySQL, Oracle</strong>, além de experiência com o <strong>ERP EBS da Oracle</strong>.
             </p>
             <p>
                 Apaixonado por <strong>otimização de processos e automação</strong>, elimino o uso excessivo de planilhas 
@@ -81,8 +82,8 @@
     </section>
 
     <section id="contato">
-        <h2>Contato</h2>
-        <form>
+        <h2>Entre em Contato</h2>
+        <form action="processa_formulario.php" method="POST">
             <input type="text" placeholder="Seu Nome" required>
             <input type="email" placeholder="Seu Email" required>
             <textarea placeholder="Sua Mensagem" required></textarea>
@@ -91,7 +92,14 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Marcos Mitsi - Todos os direitos reservados.</p>
+        <p>&copy; 2025 Marcos Mitsi  <a href="https://www.linkedin.com/in/marcos-mitsi" target="_blank">
+            <i class="fab fa-linkedin-in" id="FontAwesome"></i>
+        </a>
+
+        <a href="https://github.com/marcosmitsi" target="_blank">
+            <i class="fa-brands fa-github" id="FontAwesome"></i>
+        </a>- Todos os direitos reservados.</p>
+       
     </footer>
 
 </body>
