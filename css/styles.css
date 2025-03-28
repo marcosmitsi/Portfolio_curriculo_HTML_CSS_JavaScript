@@ -3,27 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*reset de margens e preenchimentos*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
-body{
+body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
 
-header{
+header {
     background: #0073e6;
     color: #fff;
     padding: 20px;
     text-align: center;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -31,13 +31,13 @@ nav ul{
     margin-top: 10px;
 }
 
-nav ul li a{
+nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-section{
+section {
     padding: 40px;
     max-width: 800px;
     margin: auto;
@@ -47,22 +47,85 @@ section{
     box-shadow: 0 0 10 rgba(0, 0, 0, 0.1);
 }
 
-h2{
+h2 {
     color: #0073e6;
     border-bottom: 2px solid #0073e6;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-.projeto{
-    background: #f9f9f9;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
 
-form input, form textarea, form button{
+.projeto {
+   /* background: #f9f9f9;*/
+   background: white;
+    padding: 20px;
+    border-radius: 10px;
+    /*margin-bottom: 10px;*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+    .projeto {
+        width: calc(50% - 20px); /* Agora cada projeto ocupa metade da tela */
+    }
+}
+
+@media (max-width: 600px) {
+    .projeto {
+        width: 100%; /* Em telas pequenas, cada projeto ocupa toda a largura */
+    }
+}
+
+.projeto h3 {
+    color: #0073e6;
+    margin-top: 10px;
+}
+
+.projeto p {
+    font-size: 14px;
+    color: #666;
+}
+
+.projeto .botao {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.projeto .botao:hover {
+    background: #005bb5;
+}
+
+.projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+form input, form textarea, form button {
     display: block;
     width: 100%;
     margin-bottom: 10px;
@@ -74,7 +137,7 @@ form textarea {
     resize: none;
 }
 
-form button{
+form button {
     background: #0073e6;
     color: white;
     font-size: 16px;
