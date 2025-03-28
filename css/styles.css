@@ -148,23 +148,44 @@ h2 {
 }
 
 form input, form textarea, form button {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px;
 }
+
 form textarea {
     resize: none;
 }
 
+label {
+    font-weight: bold;
+    color: #555;
+}
+
+
+
+
+
+
 form button {
     background: #0073e6;
     color: white;
-    font-size: 16px;
+    padding: 10px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #005bb5;
 }
 
 footer {

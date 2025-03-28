@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">  <!--Adicionar Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--Adicionar Font Awesome-->
 </head>
 
 <body>
@@ -25,22 +26,25 @@
         <h2>Sobre Mim</h2>
         <div class="sobre-container">
             <p>
-                Sou um profissional com experiência em <strong>desenvolvimento web</strong>, atuando com 
-                <strong>HTML, CSS, PHP, JavaScript, Angular e Bootstrap</strong>. Tenho conhecimento sólido em 
-                <strong>bancos de dados MySQL, Oracle</strong>, além de experiência com o <strong>ERP EBS da Oracle</strong>.
+                Sou um profissional com experiência em <strong>desenvolvimento web</strong>, atuando com
+                <strong>HTML, CSS, PHP, JavaScript, Angular e Bootstrap</strong>. Tenho conhecimento sólido em
+                <strong>bancos de dados MySQL, Oracle</strong>, além de experiência com o <strong>ERP EBS da
+                    Oracle</strong>.
             </p>
             <p>
-                Apaixonado por <strong>otimização de processos e automação</strong>, elimino o uso excessivo de planilhas 
-                e desenvolvo sistemas eficientes para melhorar a produtividade. Possuo facilidade em lidar com usuários, 
+                Apaixonado por <strong>otimização de processos e automação</strong>, elimino o uso excessivo de
+                planilhas
+                e desenvolvo sistemas eficientes para melhorar a produtividade. Possuo facilidade em lidar com usuários,
                 entender suas necessidades e propor soluções tecnológicas adequadas.
             </p>
             <p>
-                Atualmente, sou formado em <strong>Sistemas de Informação</strong> e estou cursando 
-                <strong>Análise e Desenvolvimento de Sistemas</strong> para me manter atualizado com as novas tecnologias.
+                Atualmente, sou formado em <strong>Sistemas de Informação</strong> e estou cursando
+                <strong>Análise e Desenvolvimento de Sistemas</strong> para me manter atualizado com as novas
+                tecnologias.
             </p>
             <p>
-                Minhas principais habilidades interpessoais incluem <strong>proatividade, organização, 
-                resolução de problemas e trabalho em equipe</strong>, sempre buscando inovação e eficiência 
+                Minhas principais habilidades interpessoais incluem <strong>proatividade, organização,
+                    resolução de problemas e trabalho em equipe</strong>, sempre buscando inovação e eficiência
                 nos projetos que desenvolvo.
             </p>
         </div>
@@ -83,23 +87,27 @@
 
     <section id="contato">
         <h2>Entre em Contato</h2>
-        <form action="processa_formulario.php" method="POST">
-            <input type="text" placeholder="Seu Nome" required>
-            <input type="email" placeholder="Seu Email" required>
-            <textarea placeholder="Sua Mensagem" required></textarea>
+        <form action="php/processa_formulario.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu Nome" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Seu Email" required>
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua Mensagem" required></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
 
     <footer>
-        <p>&copy; 2025 Marcos Mitsi  <a href="https://www.linkedin.com/in/marcos-mitsi" target="_blank">
-            <i class="fab fa-linkedin-in" id="FontAwesome"></i>
-        </a>
+        <p>&copy; 2025 Marcos Mitsi <a href="https://www.linkedin.com/in/marcos-mitsi" target="_blank">
+                <i class="fab fa-linkedin-in" id="FontAwesome"></i>
+            </a>
 
-        <a href="https://github.com/marcosmitsi" target="_blank">
-            <i class="fa-brands fa-github" id="FontAwesome"></i>
-        </a>- Todos os direitos reservados.</p>
-       
+            <a href="https://github.com/marcosmitsi" target="_blank">
+                <i class="fa-brands fa-github" id="FontAwesome"></i>
+            </a>- Todos os direitos reservados.
+        </p>
+
     </footer>
 
 </body>
