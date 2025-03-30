@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
         $mensagem = htmlspecialchars($_POST["mensagem"]);
 
-        $destinatario = "marcos.mitsi@hotmail.com";
+        $destinatario = "email@hotmail.com";
         $assunto = "Contato do Site - $nome";
         $corpoEmail = "Nome: $nome\nE-mail: $email\nMensagem:\n$mensagem";
 

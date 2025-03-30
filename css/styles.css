@@ -39,7 +39,7 @@ nav ul li a {
 
 section {
     padding: 40px;
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
     background: white;
     margin-top: 20px;
@@ -56,64 +56,109 @@ h2 {
 
 #sobre {
     padding: 40px;
-    max-width: 800px;
+    max-width: 900px;
+    /* Ajuste para permitir espaço suficiente */
     margin: auto;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Flexbox para organizar a foto e o texto lado a lado */
 .sobre-container {
+    display: flex;
+    align-items: center;
+    /* Alinha verticalmente a imagem e o texto */
+    gap: 20px;
+    /* Espaço entre a foto e o texto */
+}
+
+/* Foto do perfil */
+.foto-perfil {
+    flex: 0 0 180px;
+    /* Define um tamanho fixo para a foto */
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10%;
+    border: 3px solid #0073e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto ocupa o restante do espaço */
+.informacoes {
+    flex: 1;
+    /* Ocupa o espaço restante */
     font-size: 16px;
     color: #333;
     line-height: 1.6;
     text-align: justify;
+
 }
 
-.sobre-container p {
-    margin-bottom: 15px;
-}
-
-.sobre-container strong {
+.informacoes strong {
     color: #0073e6;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        /* Coloca a foto acima do texto em telas menores */
+        text-align: center;
+    }
+
+    .foto-perfil {
+        flex: 0 0 120px;
+        /* Reduz o tamanho da foto */
+        margin-bottom: 20px;
+    }
+
+    .foto-perfil img {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .projetos-container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .projeto {
-   /* background: #f9f9f9;*/
-   background: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
     padding: 20px;
     border-radius: 10px;
-    /*margin-bottom: 10px;*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    width: 300px;
-    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projeto img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+    width: 250px;
+    height: auto;
     border-radius: 8px;
 }
 
-@media (max-width: 900px) {
-    .projeto {
-        width: calc(50% - 20px); /* Agora cada projeto ocupa metade da tela */
-    }
+.projeto-texto {
+    flex: 1; /* Faz o texto ocupar o espaço restante */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .projeto {
-        width: 100%; /* Em telas pequenas, cada projeto ocupa toda a largura */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .projeto img {
+        width: 100%;
+        max-width: 300px;
     }
 }
 
@@ -125,6 +170,7 @@ h2 {
 .projeto p {
     font-size: 14px;
     color: #666;
+    line-height: 1.6;
 }
 
 .projeto .botao {
@@ -147,7 +193,9 @@ h2 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -167,11 +215,6 @@ label {
     font-weight: bold;
     color: #555;
 }
-
-
-
-
-
 
 form button {
     background: #0073e6;
